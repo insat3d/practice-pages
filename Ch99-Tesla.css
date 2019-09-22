@@ -1,0 +1,307 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	min-width: 360px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.landing-screen {
+	height: 100vh;
+	width: 100%;
+	background-image: url("/assets/hero-mobile.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+	.landing-screen {
+		width: 100%;
+		background-image: url("/assets/hero.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+#navbarSupportedContent > .main-navbar {
+	width: 78%;
+	justify-content: center;
+}
+
+.navbar > div > ul > .nav-item > .nav-link {
+	font-size: 0.9rem;
+	background-color: transparent;
+	font-weight: bold;
+	color: #000;
+}
+
+.navbar > div > .main-navbar > .active > .nav-link {
+	color: #eee;
+}
+
+.title-heads {
+	color: #000;
+}
+
+.title-heads > h4 {
+	font-weight: 300;
+	margin: 0;
+}
+
+.title-heads > h1 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.tagline {
+	letter-spacing: -0.05rem;
+}
+
+.stat-top {
+	font-weight: bolder;
+	font-size: 1.7rem;
+}
+
+.stat-bot {
+	font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+	.stat-top {
+		font-weight: bolder;
+		font-size: 1.4rem;
+	}
+
+	.table {
+		font-size: 0.8rem;
+	}
+}
+
+.reserve-btn {
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	font-weight: bold;
+	border: 2px solid white;
+	height: 2.5rem;
+	line-height: 1.5rem;
+	max-width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+	.reserve-btn {
+		margin-top: 20px;
+	}
+}
+
+/* ------------video and stats screen ----------- */
+
+.vid-screen video {
+	height: auto;
+	width: 100%;
+	margin: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.vid-screen video {
+		height: auto;
+		width: 100%;
+		overflow: hidden;
+		display: block;
+		margin: 50px -20%;
+		width: 350%;
+	}
+}
+
+.table {
+	width: 600px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+	margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+	.table {
+		width: 80%;
+		margin: 0 auto;
+		border-collapse: collapse;
+		font-size: 0.85rem;
+		margin-bottom: 100px;
+	}
+}
+
+.table th,
+.table td {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.table tbody > tr {
+	border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.table tbody > tr > td:nth-child(2n) {
+	font-weight: bold;
+	text-align: right;
+}
+
+/* ------ rear image section ------- */
+
+.tesla-back .img-container img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tesla-back .row {
+	position: relative;
+	margin-top: -275px;
+	font-size: 0.9rem;
+	margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+	.tesla-back .img-container {
+		width: auto;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	.tesla-back .img-container img {
+		display: block;
+		margin: 0 -20%;
+		width: 150%;
+		height: auto;
+	}
+
+	.tesla-back .row {
+		position: relative;
+		margin-top: -175px;
+		font-size: 0.9rem;
+		margin-bottom: 100px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+	.tesla-back .img-container {
+		width: auto;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	.tesla-back .img-container img {
+		display: block;
+		margin: 0 -20%;
+		width: 150%;
+		height: auto;
+	}
+
+	.tesla-back .row {
+		position: relative;
+		margin-top: -250px;
+		font-size: 0.9rem;
+		margin-bottom: 100px;
+	}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+	.tesla-back .row {
+		position: relative;
+		margin-top: -200px;
+		font-size: 0.9rem;
+		margin-bottom: 100px;
+	}
+}
+
+/* --------- interior section ------ */
+
+.interior {
+	height: auto;
+	width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+	.interior .figure {
+		width: 100%;
+		margin: 0;
+	}
+
+	.interior .figure-img {
+		margin: 0 -35%;
+		max-width: 170%;
+	}
+}
+
+.interior .figure-caption {
+	color: white;
+}
+
+.interior h5 {
+	display: inline;
+}
+
+/* ------------top view section-------------- */
+.top-view > .img-top {
+	background-image: url("/assets/top.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 130vh;
+	width: 100%;
+}
+
+.top-view h5 {
+	font-weight: bold;
+}
+
+.top-view p {
+	font-size: 0.9rem;
+}
+
+/* ------------unveil --------------*/
+
+.unveil > .container {
+	height: 45vw;
+}
+
+.unveil > .container > .video {
+	height: 100%;
+	width: 100%;
+}
+
+.footer .vr-line {
+	margin-top: 30px;
+	border-left: 1px solid rgba(255, 255, 255, 0.4);
+	height: 75px;
+	width: 10px;
+}
+
+/* ----------footer----------- */
+
+.footer > .footer-links {
+	color: #bbb;
+	font-size: 0.7rem;
+}
+
+.footer > .footer-links .col:not(:first-of-type) {
+	border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+	.footer > .footer-links .col:not(:first-of-type) {
+		border: 0px;
+	}
+
+	.footer-links .container {
+		background-color: #333;
+	}
+}
