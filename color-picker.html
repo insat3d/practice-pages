@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Picker</title>
+
+    <!-- Import Google Fonts and CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="color-picker.css">
+
+</head>
+
+<body>
+
+    <header class="newColor">
+        <div class="container">
+            <h3>THE GREAT</h3>
+            <h1 id="puzzle">rgb(100,100,100)</h1>
+            <h3>GUESSING GAME</h3>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container ">
+            <span>
+                <a class="navLinks " href="#" id="newColors">NEW COLORS</a>
+            </span>
+            <span>
+                <span class="failResult hideMe">Try Again!</span>
+                <span class="winResult hideMe">You WON!</span>
+            </span>
+            <span>
+                <a class="navLinks " href="#" id="easy">EASY</a>
+                <a class="navLinks active" href="#" id="hard">HARD</a>
+            </span>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <!-- <div class="boxContainer"> -->
+            <div class="easyRow">
+                <div class="colorBoxes easyBoxes" id="color0">
+
+                </div>
+                <div class="colorBoxes easyBoxes" id="color1">
+
+                </div>
+                <div class="colorBoxes easyBoxes" id="color2">
+
+                </div>
+            </div>
+            <div class="hardRow">
+                <div class="colorBoxes" id="color3">
+
+                </div>
+                <div class="colorBoxes" id="color4">
+
+                </div>
+                <div class="colorBoxes" id="color5">
+
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </main>
+
+    <script src="color-picker.js"></script>
+</body>
+
+</html>
