@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Picker 2</title>
+    <link rel="stylesheet" href="colorPicker2.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h3>The great</h3>
+            <h1 id="gameTitle">rgb</h1>
+            <h3>guessing game</h3>
+
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <button class="newGame">New Colors</button>
+            <span class="gameMessage">try again.</span>
+            <button class="difficulty">Easy</button>
+            <button class="difficulty selected">Hard</button>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <h3 class="scorer">Score:
+                <span class="score">0</span>
+
+            </h3>
+        </div>
+        <div class="container rules">
+            <h3>Rules: </h3>
+            <ul>
+                <li>Click on the color with RGB value matching the value in the heading</li>
+                <li>You score 3 points for each correct answer</li>
+                <li>You lose 1 point for each wrong answer</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="colorPicker2.js"></script>
+</body>
+
+</html>
