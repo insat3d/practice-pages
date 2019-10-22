@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container ">
+        <header class="appName">
+            to-do list
+            <button class="addNew"><i class="material-icons">
+                    add_circle_outline
+                </i></button>
+        </header>
+
+        <main class="">
+            <form class="newTodoInput">
+                <input type="text" name="addTodo" id="newTodo" placeholder="Add New Todo">
+            </form>
+            <ul class="newTodoList todoList">
+                <li class="todoItem">
+                    <span class="todoText">Buy
+                        Milk</span>
+                </li>
+                <li class="todoItem">
+                    <span class="todoText">Get
+                        shoes</span>
+                </li>
+                <li class="todoItem">
+                    <span class="todoText">Iron
+                        shirts</span>
+                </li>
+                <li class="todoItem ">
+                    <span class="todoText ">Iron
+                        pants</span>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

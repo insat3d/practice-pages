@@ -1,0 +1,109 @@
+body {
+	background-image: linear-gradient(90deg, rgba(33, 139, 151) 30%, 70%, rgb(230, 198, 27));
+	display: flex;
+	justify-content: center;
+	padding-top: 25vh;
+}
+
+.container {
+	width: 45vw;
+	max-width: 500px;
+	min-width: 350px;
+	/* overflow: hidden; */
+}
+
+/* Title formatting */
+.appName {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0 5px 15px;
+	background-color: rgb(104, 129, 177);
+	color: white;
+	font-size: 1.3rem;
+}
+
+.appName .addNew {
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.appName .addNew i {
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+/* New Todo Input  */
+
+.newTodoInput input {
+	width: 100%;
+	padding-left: 20px;
+	height: 3rem;
+	background-color: rgb(235, 235, 235);
+	border: none;
+	box-sizing: border-box;
+}
+
+/* The Todo List */
+
+.todoList {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: darkslategray;
+}
+
+.todoList .todoItem {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.todoList .todoItem:nth-child(2n) {
+	background-color: rgb(235, 235, 235);
+}
+
+.todoText {
+	padding-left: 20px;
+}
+
+.todoItem:hover {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.todoItem:hover .trashBtn {
+	animation-duration: .5s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: -40px;
+	}
+
+	to {
+		margin-left: 0px;
+	}
+}
+
+.trashBtn {
+	color: white;
+	background-color: red;
+	outline: none;
+	border: none;
+	height: 100%;
+}
+
+.done {
+	color: rgb(150, 150, 150);
+	font-style: italic;
+	text-decoration-line: line-through;
+}
