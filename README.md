@@ -12,4 +12,7 @@ https://insat3d.github.io/practice-pages/color-picker.html
 Tesla Roadster 
 https://insat3d.github.io/practice-pages/Ch99-Tesla.html
 
+NJT World Map
+https://insat3d.github.io/practice-pages/tab-map.html
+
 
